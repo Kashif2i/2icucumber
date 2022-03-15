@@ -1,4 +1,4 @@
-@Run
+@Run @UI
 Feature: Secure logins for the edgewords site
   In order to prevent unauthorised people accessing sensitive areas of the site
   The security team

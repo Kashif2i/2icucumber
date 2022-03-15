@@ -16,7 +16,7 @@ public class Hooks {
         this.sharedDict = sharedDict;
     }
 
-    @Before
+    @Before("@UI")
     public void setup(){
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
@@ -24,7 +24,7 @@ public class Hooks {
         sharedDict.addDict("driver", driver);
     }
 
-    @After
+    @After("@UI")
     public void teardown(){
         driver.quit();
     }
